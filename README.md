@@ -24,6 +24,23 @@ Options:
   -V, --version                 Print version``
 ```
 
+## Example
+This is what the output looks like for a circle:
+First is the row number, then the number of stitches you *have* in that row and the number of stitches you *want* in the next row.
+Then the pattern of stitches is shown, where `V` means a stitch that is doubled and `|` is a regular stitch.
+```
+ > circle
+ 0:   0   6 -> VVV
+ 1:   6  13 -> VVVVVV
+ 2:  13  19 -> V||V|V|V|V|V|
+ 3:  19  25 -> V|||V||V||V||V||V||
+ 4:  25  31 -> V||||V|||V|||V|||V|||V|||
+ 5:  31  38 -> V||||V|||V||||V|||V||||V|||V|||
+ 6:  38  44 -> V||||||V|||||V|||||V||||||V|||||V|||||
+ 7:  44  50 -> V|||||||V||||||V||||||V|||||||V||||||V||||||
+ 8:  50  57 -> V|||||||V||||||V||||||V||||||V||||||V||||||V||||||
+```
+
 ## License
 
-This project is licensed under the MIT License
+MIT
