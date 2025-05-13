@@ -18,7 +18,7 @@ jobs:
       - name: Build (Ubuntu)
         run: cargo build --release --verbose
       - name: Upload Ubuntu binary
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ubuntu-binary
           path: target/release/crochet
@@ -33,7 +33,7 @@ jobs:
       - name: Build (macOS ARM)
         run: cargo build --release --target aarch64-apple-darwin --verbose
       - name: Upload MacOS binary
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: macos-arm-binary
           path: target/aarch64-apple-darwin/release/crochet
